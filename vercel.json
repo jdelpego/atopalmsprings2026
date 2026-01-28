@@ -1,7 +1,15 @@
 {
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/",
+      "destination": "/blank.html"
+    },
+    {
+      "source": "/palmsprings",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/palmsprings/(.*)",
       "destination": "/index.html"
     }
   ],
