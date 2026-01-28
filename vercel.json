@@ -1,16 +1,19 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/",
-      "destination": "/blank.html"
+      "handle": "filesystem"
     },
     {
-      "source": "/palmsprings",
-      "destination": "/index.html"
+      "src": "^/$",
+      "status": 404
     },
     {
-      "source": "/palmsprings/(.*)",
-      "destination": "/index.html"
+      "src": "^/palmsprings/?$",
+      "dest": "/index.html"
+    },
+    {
+      "src": "^/palmsprings/.*",
+      "dest": "/index.html"
     }
   ],
   "headers": [
