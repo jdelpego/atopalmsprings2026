@@ -1,4 +1,6 @@
 {
+  "buildCommand": "echo \"Skipping build; serving static files\"",
+  "outputDirectory": ".",
   "routes": [
     {
       "handle": "filesystem"
