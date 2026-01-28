@@ -1,6 +1,10 @@
 {
-  "buildCommand": "echo \"Skipping build; serving static files\"",
-  "outputDirectory": ".",
+  "builds": [
+    {
+      "src": "**/*",
+      "use": "@vercel/static"
+    }
+  ],
   "routes": [
     {
       "handle": "filesystem"
