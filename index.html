@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATO Palm Springs 2026</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/nectarine.woff2">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <img src="atoucsb.png" alt="ATO UCSB" class="header-logo">
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="mainimage.png" alt="Palm Springs" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <img src="ato.png" alt="ATO" class="hero-logo-inline">
+                <span>PALM SPRINGS 2026</span>
+            </h1>
+            <p class="hero-dates">FEBRUARY 26th-MARCH 1st</p>
+            <p class="hero-description">Three nights, Feb 26th - March 1st, at our gorgeous main property + your very own group Airbnb. Lazy River, endless booze, BBQ dinners, and a weekend of fun with your best friends in the desert.</p>
+            <button id="signup-btn-hero" class="btn-signup">SIGN UP</button>
+        </div>
+    </section>
+
+    <!-- What to Expect Section -->
+    <section class="what-to-expect">
+        <h2 class="section-title">WHAT TO EXPECT</h2>
+        
+        <!-- Subsection 1: Main Property -->
+        <div class="expectation-subsection">
+            <div class="subsection-image-container">
+                <img src="mainproperty.png" alt="Main Property" class="subsection-image" loading="lazy">
+                <div class="subsection-overlay"></div>
+            </div>
+            <div class="subsection-content">
+                <p class="subsection-branding">ATO Palm Springs</p>
+                <h3 class="subsection-header">MAIN PROPERTY</h3>
+                <p class="subsection-text">3 days of endless fun at our main property.</p>
+            </div>
+        </div>
+
+        <!-- Subsection 2: Private Airbnbs -->
+        <div class="expectation-subsection">
+            <div class="subsection-image-container">
+                <img src="airbnb.png" alt="Private Airbnbs" class="subsection-image" loading="lazy">
+                <div class="subsection-overlay"></div>
+            </div>
+            <div class="subsection-content">
+                <p class="subsection-branding">ATO Palm Springs</p>
+                <h3 class="subsection-header">PRIVATE AIRBNBS</h3>
+                <p class="subsection-text">Private Airbnb property so you can take a relaxing break from the fun, just 5 minutes away from the main property. Includes your whole group.</p>
+            </div>
+        </div>
+
+        <!-- Subsection 3: BBQ Dinners -->
+        <div class="expectation-subsection">
+            <div class="subsection-image-container">
+                <img src="beverages.png" alt="BBQ Dinners" class="subsection-image" loading="lazy">
+                <div class="subsection-overlay"></div>
+            </div>
+            <div class="subsection-content">
+                <p class="subsection-branding">ATO Palm Springs</p>
+                <h3 class="subsection-header">BBQ Dinners</h3>
+                <p class="subsection-text">BBQ dinners + alcoholic drinks provided. Breakfast and lunch not included.</p>
+            </div>
+        </div>
+
+        <!-- Subsection 4: Endless Entertainment -->
+        <div class="expectation-subsection">
+            <div class="subsection-image-container">
+                <img src="entertainment.png" alt="Endless Entertainment" class="subsection-image" loading="lazy">
+                <div class="subsection-overlay"></div>
+            </div>
+            <div class="subsection-content">
+                <p class="subsection-branding">ATO Palm Springs</p>
+                <h3 class="subsection-header">Endless Entertainment</h3>
+                <p class="subsection-text">On Property Lazy River, Waterslides, Bowling Lane, Arcade, and Pickleball. Daily Lawn Games, Nightly Themes, and on-property parties.</p>
+            </div>
+        </div>
+
+        <!-- Final CTA -->
+        <div class="final-cta">
+            <button id="signup-btn-bottom" class="btn-signup">SIGN UP</button>
+        </div>
+    </section>
+
+    <!-- Signup Drawer -->
+    <div class="signup-overlay" data-signup-close aria-hidden="true"></div>
+    <div class="signup-drawer" role="dialog" aria-modal="true" aria-labelledby="signup-title" aria-hidden="true">
+        <div class="signup-drawer-content" role="document">
+            <div class="signup-drawer-header">
+                <span class="signup-drawer-handle" aria-hidden="true"></span>
+                <h2 id="signup-title" class="signup-drawer-title">Sign Up</h2>
+                <button class="signup-drawer-close" type="button" aria-label="Close sign up form" data-signup-close>X</button>
+            </div>
+            <div class="signup-form-container" id="signup-form-container"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <img src="atoucsb.png" alt="ATO UCSB" class="footer-logo">
+            <div class="footer-contact">
+                <p class="footer-contact-line">Joaquin Del Pego</p>
+                <p class="footer-contact-line">ATO Social Internal Chair</p>
+                <a class="footer-contact-link" href="sms:+18584729385">Text +1 858 472 9385</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
