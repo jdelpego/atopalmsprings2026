@@ -547,12 +547,12 @@ img {
 
 @media (max-width: 767px) {
     .what-to-expect {
-        padding-bottom: var(--spacing-md);
+        padding-bottom: 0;
     }
 
     .final-cta {
-        padding: 0 0 var(--spacing-sm);
-        margin-top: 0;
+        padding: 0;
+        margin: 0;
     }
 
     .gallery-section {
@@ -560,12 +560,12 @@ img {
     }
 
     .gallery-section .section-title {
-        margin: 0 0 var(--spacing-sm);
+        margin: 0 0 var(--spacing-xs);
         padding-bottom: 0;
     }
 
     .section-title::after {
-        margin-top: var(--spacing-xs);
+        margin-top: 0;
     }
 }
 
