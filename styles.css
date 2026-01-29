@@ -547,17 +547,21 @@ img {
 
 @media (max-width: 767px) {
     .final-cta {
-        padding: var(--spacing-sm) 0;
-        margin-top: var(--spacing-xs);
+        padding: 0 0 var(--spacing-sm);
+        margin-top: 0;
     }
 
     .gallery-section {
-        padding-top: var(--spacing-xs);
+        padding-top: 0;
     }
 
     .gallery-section .section-title {
-        margin-bottom: var(--spacing-md);
-        padding-bottom: var(--spacing-xs);
+        margin: 0 0 var(--spacing-sm);
+        padding-bottom: 0;
+    }
+
+    .section-title::after {
+        margin-top: var(--spacing-xs);
     }
 }
 
