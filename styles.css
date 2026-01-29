@@ -545,29 +545,6 @@ img {
     }
 }
 
-@media (max-width: 767px) {
-    .what-to-expect {
-        padding-bottom: 0;
-    }
-
-    .final-cta {
-        padding: 0;
-        margin: 0;
-    }
-
-    .gallery-section {
-        padding-top: 0;
-    }
-
-    .gallery-section .section-title {
-        margin: 0 0 var(--spacing-xs);
-        padding-bottom: 0;
-    }
-
-    .section-title::after {
-        margin-top: 0;
-    }
-}
 
 @media (hover: none) {
     .subsection-image-container:hover {
@@ -662,6 +639,18 @@ img {
     .gallery-item:hover {
         transform: translateY(-6px);
         box-shadow: var(--shadow-md);
+    }
+}
+
+/* Mobile: Tighten spacing around bottom Sign Up button */
+@media (max-width: 767px) {
+    .final-cta {
+        padding: var(--spacing-sm) 0;
+        margin-top: var(--spacing-sm);
+    }
+
+    .gallery-section {
+        padding-top: var(--spacing-md);
     }
 }
 
