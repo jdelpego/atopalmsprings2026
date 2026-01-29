@@ -506,12 +506,12 @@ img {
 @media (max-width: 767px) {
     .section-title {
         font-size: clamp(1.75rem, 7.5vw, 2.6rem);
-        margin-bottom: var(--spacing-lg);
+        margin-bottom: calc(var(--spacing-xl) + 0.5rem);
         letter-spacing: 0.08em;
     }
 
     .expectation-subsection {
-        margin-bottom: var(--spacing-lg);
+        margin-bottom: calc(var(--spacing-section) - 1rem);
     }
 
     .subsection-image-container {
