@@ -546,6 +546,10 @@ img {
 }
 
 @media (max-width: 767px) {
+    .what-to-expect {
+        padding-bottom: var(--spacing-md);
+    }
+
     .final-cta {
         padding: 0 0 var(--spacing-sm);
         margin-top: 0;
