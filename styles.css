@@ -506,12 +506,12 @@ img {
 @media (max-width: 767px) {
     .section-title {
         font-size: clamp(1.75rem, 7.5vw, 2.6rem);
-        margin-bottom: calc(var(--spacing-xl) + 0.5rem);
+        margin-bottom: var(--spacing-lg);
         letter-spacing: 0.08em;
     }
 
     .expectation-subsection {
-        margin-bottom: calc(var(--spacing-section) - 1rem);
+        margin-bottom: var(--spacing-lg);
     }
 
     .subsection-image-container {
@@ -547,12 +547,17 @@ img {
 
 @media (max-width: 767px) {
     .final-cta {
-        padding: var(--spacing-md) 0;
-        margin-top: 0;
+        padding: var(--spacing-sm) 0;
+        margin-top: var(--spacing-xs);
     }
 
     .gallery-section {
-        padding-top: var(--spacing-sm);
+        padding-top: var(--spacing-xs);
+    }
+
+    .gallery-section .section-title {
+        margin-bottom: var(--spacing-md);
+        padding-bottom: var(--spacing-xs);
     }
 }
 
