@@ -7,6 +7,20 @@
   ],
   "routes": [
     {
+      "src": "^/palmsprings/?$",
+      "headers": {
+        "X-Robots-Tag": "noindex, nofollow"
+      },
+      "continue": true
+    },
+    {
+      "src": "^/palmsprings/.*",
+      "headers": {
+        "X-Robots-Tag": "noindex, nofollow"
+      },
+      "continue": true
+    },
+    {
       "src": "^/fonts/(.*)",
       "headers": {
         "Access-Control-Allow-Origin": "*",
@@ -19,7 +33,10 @@
     },
     {
       "src": "^/$",
-      "status": 404
+      "status": 301,
+      "headers": {
+        "Location": "/palmsprings"
+      }
     },
     {
       "src": "^/palmsprings/?$",
