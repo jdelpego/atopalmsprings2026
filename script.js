@@ -121,4 +121,49 @@ document.addEventListener('DOMContentLoaded', function() {
             closeDrawer();
         });
     });
+
+    // Mobile gallery auto-scroll (gentle, stops on interaction)
+    const galleryGrid = document.querySelector('.gallery-grid');
+    if (galleryGrid) {
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+        const mobileQuery = window.matchMedia('(max-width: 767px)');
+        let autoScrollId = null;
+        let autoScrollActive = false;
+
+        const stopAutoScroll = () => {
+            if (autoScrollId) {
+                clearInterval(autoScrollId);
+                autoScrollId = null;
+            }
+            autoScrollActive = false;
+        };
+
+        const startAutoScroll = () => {
+            if (autoScrollActive || prefersReducedMotion.matches || !mobileQuery.matches) return;
+            autoScrollActive = true;
+            autoScrollId = setInterval(() => {
+                const maxScroll = galleryGrid.scrollWidth - galleryGrid.clientWidth;
+                if (maxScroll <= 0) return;
+                const step = Math.max(1, Math.floor(galleryGrid.clientWidth * 0.9));
+                const next = galleryGrid.scrollLeft + step;
+                if (next >= maxScroll - 4) {
+                    galleryGrid.scrollTo({ left: 0, behavior: 'smooth' });
+                } else {
+                    galleryGrid.scrollTo({ left: next, behavior: 'smooth' });
+                }
+            }, 4500);
+        };
+
+        startAutoScroll();
+
+        ['touchstart', 'pointerdown', 'wheel'].forEach(eventName => {
+            galleryGrid.addEventListener(eventName, stopAutoScroll, { passive: true });
+        });
+
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                stopAutoScroll();
+            }
+        });
+    }
 });
