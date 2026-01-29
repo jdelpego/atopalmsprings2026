@@ -511,7 +511,7 @@ img {
     }
 
     .expectation-subsection {
-        margin-bottom: var(--spacing-section);
+        margin-bottom: calc(var(--spacing-section) - 1rem);
     }
 
     .subsection-image-container {
@@ -542,6 +542,17 @@ img {
     .subsection-text {
         font-size: clamp(0.95rem, 3.6vw, 1.1rem);
         line-height: 1.7;
+    }
+}
+
+@media (max-width: 767px) {
+    .final-cta {
+        padding: calc(var(--spacing-xl) + 0.5rem) 0;
+        margin-top: var(--spacing-lg);
+    }
+
+    .gallery-section {
+        padding-top: calc(var(--spacing-lg) + 0.5rem);
     }
 }
 
